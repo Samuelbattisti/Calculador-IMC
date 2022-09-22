@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de IMC</title>
+    <link rel="stylesheet" href="/aula 22/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1 class="titulo">Calculador de índice de massa corporal</h1>
+        <table class="tabela">
+            <tr>
+                <th>IMC</th>
+                <th>CLASSIFICAÇÃO</th>
+                <th class="numero">GRAU DE OBESIDADE</th>
+            </tr>
+            <tr>
+                <td>MENOR QUE 18,5</td>
+                <td>ABAIXO DO PESO</td>
+                <td class="numero">0</td>
+            </tr>
+            <tr>
+                <td>ENTRE 18,5 E 24,9</td>
+                <td>NORMAL</td>
+                <td class="numero">0</td>
+            </tr>
+            <tr>
+                <td>ENTRE 25,0 E 29,9</td>
+                <td>SOBREPESO</td>
+                <td class="numero">1</td>
+            </tr>
+            <tr>
+                <td>ENTRE 30,0 E 39,9</td>
+                <td>OBESIDADE</td>
+                <td class="numero">2</td>
+            </tr>
+            <tr>
+                <td>MAIOR QUE 40,0</td>
+                <td>OBESIDADE GRAVE</td>
+                <td class="numero">3</td>
+            </tr>
+        </table>
+        <form id="formulario" action="">
+            <label for="">Peso:</label>
+            <input type="text" id="peso">
+            <label for="">Altura:</label>
+            <input type="text" id="altura">
+            <button type="submit" class="botao">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </section>
+
+    <script src="/aula 22/main.js"></script>
+</body>
+
+</html>

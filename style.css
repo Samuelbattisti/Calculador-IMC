@@ -1,0 +1,131 @@
+:root {
+    --primary-color: cadetblue;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+.container {
+    width: 650px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--primary-color);
+}
+
+
+#formulario {
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+#altura,
+#peso {
+    padding: 25px;
+    height: 5px;
+    border: 1px solid var(--primary-color);
+    font-size: larger;
+}
+
+#peso:active,
+#altura:active {
+    background-color: rgba(36, 202, 208, 0.201);
+
+}
+
+.botao {
+
+    width: 610px;
+    padding: 14px;
+    margin: 10px 0 10px 0;
+    background-color: rgba(95, 158, 160, 0.873);
+    border: 0;
+    color: rgb(255, 255, 255);
+}
+
+.botao:hover {
+    color: white;
+    background-color: rgb(29, 65, 67);
+    ;
+    cursor: pointer;
+}
+
+.botao:active {
+    color: white;
+    background-color: rgb(0, 189, 195);
+    cursor: pointer;
+}
+
+/*
+
+tabela
+
+*/
+
+h1 {
+    padding-left: 90px;
+}
+
+.tabela {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    /*collapse = junta, separete = separada */
+}
+
+th,
+td {
+    padding: 11px;
+    color: var(--primary-color);
+}
+
+th {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    /* Deixar todas as letras maiusculas */
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    ;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.2em;
+    /*Espaço das letras*/
+}
+
+.numero {
+    text-align: right;
+}
+
+tr:hover {
+    background-color: rgba(36, 202, 208, 0.201);
+}
+
+/*criados no js*/
+.paragrafo-resultado {
+    color: white;
+    background-color: rgb(0, 152, 0);
+    padding: 10px 20px;
+}
+
+.not {
+    color: white;
+    background-color: rgb(192, 14, 14);
+    padding: 10px 20px;
+}
